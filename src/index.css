@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer utilities {
+  .tap-highlight-transparent {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .smooth-edges {
+    -webkit-backface-visibility: hidden;
+  }
+
+  .animate-wave {
+    animation-name: wave;
+    animation-duration: 2.5s; 
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+  }
+  @keyframes wave {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }
+  100% { transform: rotate( 0.0deg) }
+}
+}
+
+.my-masonry-grid {
+  display: flex;
+  width: auto;
+}
+
+/* Masonry grid columns */
+.my-masonry-grid_column {
+  /* padding-left: 20px; gutter size */
+  background-clip: padding-box;
+}
+/* "DSC_0991.JPG",
+    "DSC_0610.JPG",
+    "DSC_0675.jpg",
+    "_MG_0405.jpg",
+    ""DSC_0991.JPG",
+    "DSC_0610.JPG",
+    "DSC_0675.jpg",
+    "_MG_0405.jpg",
+    "DSC_0179 (1).jpg",
+    "DSC_0187 (1).jpg",
+    "DSC_0229.jpg",
+    "DSC_0174.jpg",
+    "DSC_0615.jpg",
+    "DSC_0230 (1).jpg",
+    "DSC_0272 (1).jpg",
+    "DSC_0997.jpg",
+    "DSC_0628 (1).jpg",
+    "DSC_1024.JPG",
+    "DSC_1000.JPG",
+    "DSC_0234.jpg",",
+    "DSC_0187 (1).jpg",
+    "DSC_0229.jpg",
+    "DSC_0174.jpg",
+    "DSC_0615.jpg",
+    "DSC_0230 (1).jpg",
+    "DSC_0272 (1).jpg",
+    "DSC_0997.jpg",
+    "DSC_0628 (1).jpg",
+    "DSC_1024.JPG",
+    "DSC_1000.JPG",
+    "DSC_0234.jpg", */
