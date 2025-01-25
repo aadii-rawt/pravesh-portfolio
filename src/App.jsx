@@ -4,7 +4,7 @@ import Layout from './layout/Layout';
 import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
-import Contact from './pages/Admin';
+import Admin from './pages/Admin';
 
 function App() {
  
