@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../output.css';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -38,14 +39,14 @@ function Navbar() {
                                 </a>
                             </li>
                             <li className="group">
-                                <a href="/about" className="font-signika text-2xl tap-highlight-transparent">
+                                <Link to='/about' className="font-signika text-2xl tap-highlight-transparent">
                                     ABOUT ME
-                                </a>
+                                </Link>
                             </li>
                             <li className="group">
-                                <a href="/contact" className="font-signika text-2xl tap-highlight-transparent">
+                                <Link to='/contact' className="font-signika text-2xl tap-highlight-transparent">
                                     CONTACT
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>
