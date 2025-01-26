@@ -21,14 +21,14 @@ function App() {
           element: <About />
         },{
           path: "/contact",
-          element: <Contact />
+          element: <Admin />
         },
       ]
     },
-    {
-      path: "/admin",
-      element: <Admin />
-    }
+    // {
+    //   path: "/admin",
+    //   element: 
+    // }
   ])
 
   return (
