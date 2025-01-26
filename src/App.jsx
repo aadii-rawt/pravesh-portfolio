@@ -7,28 +7,28 @@ import Contact from './pages/Contact';
 import Admin from './pages/Admin';
 
 function App() {
- 
+
   const router = createBrowserRouter([
     {
-      path : "",
+      path: "",
       element: <Layout />,
-      children : [
+      children: [
         {
           path: "/",
-          element: <Home /> 
-        },{
-          path : "/about",
+          element: <Home />
+        }, {
+          path: "/about",
           element: <About />
-        },{
+        }, {
           path: "/contact",
-          element: <Admin />
+          element: <Contact />
         },
       ]
     },
-    // {
-    //   path: "/admin",
-    //   element: 
-    // }
+    {
+      path: "/admin",
+      element: <Admin />
+    }
   ])
 
   return (

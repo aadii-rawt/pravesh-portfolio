@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Footer() {
     return (
@@ -55,7 +56,7 @@ function Footer() {
                     </div>
                 </div>
                 <p className="mt-8 text-xs text-gray-600 dark:text-gray-300 text-center">
-                    Copyright © 2025 Pravesh Chaudhary
+                    Copyright © 2025  <Link to='/admin'>Pravesh Chaudhary</Link>
                 </p>
                 <p className="mt-4 text-xs text-gray-600 dark:text-gray-300 text-center">Design & Developed by <a href="https://dotdazzle.in/" className='underline'>Dotdazzle</a></p>
             </div>
