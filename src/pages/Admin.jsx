@@ -10,11 +10,18 @@ import UploadImage from '../components/UploadImage';
 function Admin() {
 
 
-  const [isLogin, setIsLogin] = useState(true);
+  const [isLogin, setIsLogin] = useState(false);
   const [addNew, setaddNew] = useState(false);
   const [img, setImg] = useState('')
   const [images, setImages] = useState([]);
   const [loading, setLoading] = useState(true)
+  useEffect(() => {
+    const isAdmin = localStorage.getItem("pravesh")
+    if (isAdmin) {
+      setIsLogin(true)
+    }
+
+  }, [])
 
   const fetchImages = async () => {
     try {
@@ -41,6 +48,8 @@ function Admin() {
   useEffect(() => {
     fetchImages();
   }, []);
+
+
 
   const breakpointColumnsObj = {
     default: 3,

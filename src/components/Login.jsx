@@ -9,6 +9,7 @@ function Login({ setIsLogin }) {
             setError("wrong password !")
             return
         }
+        localStorage.setItem("pravesh", "pravesh Admin")
         setIsLogin(true)
     }
     return (
